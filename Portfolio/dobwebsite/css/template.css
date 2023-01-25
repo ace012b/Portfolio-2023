@@ -1,0 +1,409 @@
+header.center{
+    margin-top: 49px;
+}
+
+header li a{
+    color:  var(--blue);
+    font: 600 18px var(--font);
+}
+
+header li+li{
+    margin-left: 2.4vw;
+}
+
+
+header li a,
+header .lang{
+    color:var(--blue);
+    font: 600 18px var(--font);
+}
+
+header .lang i{
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+header .buttonLink{
+    margin-left: 42px;
+    height: 60px;
+    min-width: 200px;
+    padding: 0 15px;
+    background: var(--white);
+    color: var(--red);
+    font: 600 18px var(--font);
+    
+}
+
+header .buttonLink i{
+    font: 600 18px var(--font);
+    margin-left: 14px;
+}
+
+
+header nav a:hover{
+    color: red;
+    transform: 200ms;
+}
+
+
+/* section */
+section .bannerStart .text{
+    max-width: 600px;
+    order: 1;
+}
+section .bannerStart img{
+    order: 2;
+    max-width: 700px;
+    margin-right: -272px;
+}
+
+section .bannerStart .text p{
+    margin-top: 45px;
+}
+
+section div.links{
+    margin-top: 47px;
+}
+
+section div.links .link{
+    font: 600 18px var(--font);
+    margin-left: 40px;
+    color: var(--blue);
+    
+}
+
+
+/* offer - section */
+.offer{
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.offer > *{
+    flex: auto;
+    width: 300px;
+    margin: 30px;
+}
+
+.offer .item{
+    background: var(--white);
+    padding: 30px 43px;
+    max-width: 320px;
+    transition: 300ms;
+
+}
+
+.item h2{
+    margin-top: 63px;
+    line-height: 1.3em;
+    font: 600 27px var(--font);
+    color: var(--blue);
+}
+
+.item p{
+    margin-top:45px;
+    font: 14px var(--font);
+    color: var(--blue);
+    line-height: 1.6em;
+}
+
+
+/* Baner dolny */
+.bannerBot{
+    margin-top:234px;
+}
+.bannerBot img{
+    max-width: 627px;
+}
+
+
+
+.testimonials img{
+    margin: 0 128px 0 -160px;
+    max-width: 630px;
+}
+
+
+.testimonials .paragraph {
+    margin: 63px 0 50px;
+}
+
+
+/* gallery */
+
+
+.gallery .list {
+    margin: 70px -15px 35px -15px;
+}
+
+.gallery .item {
+width: 300px;
+min-height: 280px;
+max-height: 400px;
+height: 30vw;
+margin: 15px;
+background-color: var(--grey);
+transition: 200ms linear;
+cursor: pointer;
+}
+
+
+
+
+/* sekcja news */
+
+.news .list {
+    margin: 70px -15px -15px;
+}
+
+.news .item {
+
+    width: 300px;
+    min-height: 350px;
+    margin: 15px;
+    padding: 50px 40px ;
+    position: relative;
+
+}
+
+.news h2 {
+    font: 600 18px var(--font);
+    color: var(--blue);
+}
+
+.news span {
+    font-size: 14px;
+    color: var(--grey);
+    margin: 20px 0 38px;
+    display: block;
+    
+}
+
+
+.news .item::after{
+content: "\f148";
+font-family: uicons-solid-rounded;
+color: var(--red);
+position: absolute;
+right: 29px;
+bottom: 33px;
+font-size: 30px;
+
+}
+
+.news .item a {
+    font-size: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.news .item:hover {
+    background-color: var(--red);
+}
+
+.news .item:hover * {
+    color: var(--white);
+}
+
+.news .item:hover::after  {
+    color: white;
+}
+/* contact */
+
+
+
+.contactus {
+
+    margin: 44px -16px -16px;
+}
+
+.contactus textarea{
+    width: 100%;
+}
+
+.contactus input, .contactus textarea{
+height: 60px;
+padding: 0 30px;
+font: 600 18 px var(--font);
+color: var(--blue);
+display: block;
+border: none;
+margin: 16px;
+background-color: lightblue;
+
+}
+
+.contactus input::placeholder {
+    color: var(--blue);
+}
+
+.contauus input::-moz-placeholder {
+    color: var(--blue);
+}
+
+.contactus .button {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contactus textarea {
+    padding: 30px;
+    min-height: 120px;
+}
+
+.contactus button {
+    border: none;
+    cursor: pointer;
+}
+
+/* stopka */
+
+
+footer {
+    
+     
+    background-color: var(--blue);
+    padding: 70px 30px 50px;
+}
+
+ 
+
+footer h2 {
+font: 600 42px var(--font);
+margin-top: 22px;
+}
+
+footer nav {
+margin: 43px auto;
+}
+
+footer nav li+li {
+margin-left: 2.4vh;
+
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+footer ul.social a {
+    font-size: 38px;
+}
+
+footer ul.social li+li {
+    margin-left: 4.8vw;
+}
+/* ukrycie przycisku hmb do rwd */
+
+header .mobile {
+    display: none;
+}
+
+
+
+/* rwd  ***************************************** */
+/* uzywac wartosci od gory do dolu  */
+/* znajdz header z navemem z ul z klasa flex */
+
+@media (max-width:1070px){
+      .bannerStart, .testimonials {
+        flex-wrap: wrap;
+        height: inherit;
+       }
+       section .bannerStart img{
+        order: 1;
+        margin: 50px 0 70px 0;
+        max-width: 100%;
+       }
+       .testimonials img {
+       margin: 0 0 70px 0;
+       max-width: 100%;
+       }
+       section .bannerStart h1 {
+        font-size: 8vw;
+       }
+}
+
+@media  (max-width:1000px) {
+header nav ul.flexBlock{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 15px;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.508) ;
+}
+
+
+header nav li+li {
+    margin-left: 0;
+}
+
+header nav li {
+    height: 20%;
+}
+
+header nav li a.standardButton {
+    height: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: var(--white);
+    max-width: 90%;
+    margin: 0 auto;
+}
+header nav li a:hover {
+    background: rgba(255, 255, 255, 0.629);
+
+}
+header nav li a {
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: var(--white);
+    transition: transform;
+}
+header nav.active ul.flexBlock {
+    display: block;
+    height: 100vw;
+}
+    header .mobile {
+        display: inline-flex;
+        
+    }
+
+
+header .fi-rr-phone-call {
+    font-size: 0;
+}
+
+
+    
+}
+
+@media (max-width: 650px){
+
+    header .buttonLink {
+        min-width: 60px;
+        font-size: 0;
+        
+    }
+    header .buttonLink .fi-rr-arrow-right {
+        font-size: 0;
+    }
+
+    header .buttonLink .fi-rr-phone-call {
+        font-size: 22px !important;
+        margin-left: 0;
+    }
+
+}

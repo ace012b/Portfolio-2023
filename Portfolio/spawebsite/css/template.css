@@ -1,0 +1,336 @@
+header.center{
+    margin-top: 10px;
+}
+
+
+header nav {
+
+z-index: 1;
+margin-right: 340px;
+
+}
+header li a{
+    
+    font: 600 18px var(--font);
+}
+
+header li+li{
+    margin-left: 2.4vw;
+}
+
+
+header li a,
+header .lang{
+    color:var(--black);
+    font: 600 18px var(--font);
+}
+
+header .lang i{
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+header .buttonLink{
+    margin-left: 42px;
+    height: 60px;
+    min-width: 200px;
+    padding: 0 15px;
+    background: var(--white);
+    color: var(--red);
+    font: 600 18px var(--font);
+    
+}
+
+header .buttonLink i{
+    font: 600 18px var(--font);
+    margin-left: 14px;
+}
+
+
+header nav a:hover{
+    color: red;
+    transform: 200ms;
+}
+
+
+/* section */
+
+section .bannerStart .text{
+    margin-left: 100px;
+    max-width: 600px;
+    order: 1;
+}
+section .bannerStart img{
+    order: 1;
+    max-width: 100px;
+    margin-right: 0px;
+}
+
+
+section .bannerStart img{
+    order: 1;
+    max-width: 1700px;
+    margin-left: 0;
+}
+section .bannerStart .text p{
+    margin-top: 45px;
+}
+
+section div.links{
+    margin-top: 47px;
+}
+
+section div.links .link{
+    font: 600 18px var(--font);
+    margin-left: 40px;
+    color: var(--blue);
+    
+}
+
+section div img {
+    z-index : -2;
+}
+
+
+
+
+
+
+
+/* offer - section */
+.offer{
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.offer > *{
+    flex: auto;
+    width: 300px;
+    margin: 30px;
+}
+
+.offer .item{
+    background: var(--white);
+    padding: 30px 43px;
+    max-width: 320px;
+    transition: 300ms;
+
+}
+
+.item h2{
+    margin-top: 63px;
+    line-height: 1.3em;
+    font: 600 27px var(--font);
+    color: var(--blue);
+}
+
+.item p{
+    margin-top:45px;
+    font: 14px var(--font);
+    color: var(--blue);
+    line-height: 1.6em;
+}
+
+
+
+/* news */
+
+.about img {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 550px;
+}
+
+.news .list {
+    margin: 70px -15px -15px;
+}
+
+.news .item {
+    background-color: rgb(209, 206, 206);
+    width: 200px;
+    min-height: 570px;
+    margin: 5px;
+    padding: 5px 5px ;
+    position: relative;
+
+}
+
+
+
+.news .item a {
+    font-size: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.news .item p {
+    
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.news .item p .fi{
+    margin: 1px 1px 15px 1px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.news .item:hover {
+    background-color: var(--red);
+    display: ;
+}
+
+.news .item:hover * {
+    color: var(--white);
+}
+
+.news .item:hover::after  {
+    color: white;
+}
+
+
+/* procedures */
+
+.procedures .item {
+
+    border: 1px solid rgba(80, 79, 79, 0.086);
+    width: 200px;
+    min-height: 350px;
+    margin: 15px;
+    padding: 50px 40px ;
+    position: relative;
+
+}
+
+.procedures h2 {
+    font: 600 18px var(--font);
+    color: var(--blue);
+}
+
+.procedures span {
+    font-size: 14px;
+    color: var(--grey);
+    margin: 20px 0 38px;
+    display: block;
+    
+}
+
+
+
+.procedures .item a {
+    font-size: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.procedures .item:hover {
+    
+    box-shadow: 0px 15px 20px rgb(25 45 51 / 15%);
+   
+}
+
+
+
+.procedures .item:hover::after  {
+    color: white;
+    
+}
+
+.procedures h4 {
+font-size: 24px;
+
+}
+
+.procedures h3 {
+    font-size: 12px;
+}
+
+
+.gallery2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+}
+
+/* opinion */
+
+.opinion {
+    background-color: rgba(142, 64, 8, 0.112);
+    height: 600px;
+    width: 1080px;
+}
+.opinion .firstOp h3 h2 {
+    color: black;
+    font-size: 12px;
+}
+.opinion .firstOP h3 {
+    color: orange;
+    font-size: 40px;
+}
+
+/* procedures */
+
+
+.experience h4 {
+    font-size: 24px;
+    
+    }
+
+    .experience h3 {
+        font-size: 12px;
+    }
+
+
+
+    
+    
+footer {
+    
+     
+    background-color: var(--white);
+    padding: 70px 30px 50px;
+}
+
+ /* stopka */
+
+footer h2 {
+font: 600 42px var(--font);
+margin-top: 22px;
+}
+
+footer nav {
+margin: 43px auto;
+}
+
+footer nav li+li {
+margin-left: 2.4vh;
+
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+footer ul.social a {
+    font-size: 38px;
+}
+
+footer ul.social li+li {
+    margin-left: 4.8vw;
+}

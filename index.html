@@ -1,12 +1,455 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- ionicons karouzel -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <title>Acedev by Wojciech Kruczek</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"> Wojtek</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Services
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact me
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns">
+                     <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps "></i>
+
+                     </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/wojciech-kruczek-9070a8204/" target="_blank"class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.facebook.com/wojtek.kruczek.3" target="_blank" class="home__social-icon">
+                            <i class="uil uil-facebook-messenger-alt"></i>
+                        </a>
+                        <a href="https://github.com/ace012b" target="_blank"class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__blob">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#FA4D56" d="M41.3,-46.6C53,-39.4,61.7,-25.9,61.2,-13.1C60.8,-0.3,51.2,11.9,44,26.4C36.8,41,32,58,21.1,65C10.1,72,-7,69.1,-21.2,62.2C-35.4,55.3,-46.6,44.3,-51.1,31.8C-55.6,19.3,-53.4,5.1,-53.8,-12.5C-54.3,-30.1,-57.5,-51.3,-49,-59.1C-40.5,-66.9,-20.2,-61.4,-2.7,-58.1C14.8,-54.9,29.6,-53.9,41.3,-46.6Z" transform="translate(100 100)" />
+                            <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/ja5555.png"/>
+                          </svg>
+
+
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">Hi,&nbsp I'am Wojtek</h1>
+                        <h3 class="home__subtitle">Frontend developer</h3>
+                        <p class="home__description">I am a graduate of the University of Pedagogy in Krakow. I am passionate about programming and using the latest technologies to create great projects.</p>
+                        <a href="#contact" class="button button--flex">
+                            Contact Me<i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-circle-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+             </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container grid">
+                <img src="assets/img/ja55.png" alt="" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">essaehasejasejasjejasjeasjejscnfsbcvabscfasndasdjjvhah ha dhashe asjeasj ejaseaea</p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">+1</span>
+                            <span class="about__info-name">Year of experience<br> </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">+10</span>
+                            <span class="about__info-name">Completed<br>Projects </span>
+                        </div>
+
+                        <div>
+                            <span class="about__info-title">+8</span>
+                            <span class="about__info-name">Courser and certificates<br> </span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                <a download="" href="assets/pdf/Wojciech_Kruczek_resume_pl.pdf" class="button button--flex">
+                  Download CV <i class="uil uil-file-download button__icon"></i>
+                </a>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!-- skills 1 -->
+                        <div class="skills__content skills__open">
+
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__titles">Frontend developer</h1>
+                                    <span class="skills__subtitle">1 year</span>
+
+                                  </div>
+
+                                  <i class="uil uil-angle-down skills__arrow"></i>
+                                  
+                            </div>
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skilss__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skilss__number">Advanced</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skilss__number">Begginer</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skilss__number">Beginner</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__react"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skilss__number">Intermediate</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skilss__number">Begginer</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__git"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- skills 2 -->
+                            <div class="skills__content skills__close">
+                                <div class="skills__header">
+                                    <i class="uil uil-cube skills__icon"></i>
     
-</body>
+                                    <div>
+                                        <h1 class="skills__titles">3D cad designer</h1>
+                                        <span class="skills__subtitle">1 year</span>
+    
+                                      </div>
+    
+                                      <i class="uil uil-angle-down skills__arrow"></i>
+                                      
+                                </div>
+                                <div class="skills__list grid">
+    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Autodesk Inventor</h3>
+                                            <span class="skilss__number">Intermediate</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__inventor"></span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Cura 3D</h3>
+                                            <span class="skilss__number">Intermediate</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__cura"></span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Matrix 3D</h3>
+                                            <span class="skilss__number">Begginer</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__matrix"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- skills 3 -->
+
+                            <div class="skills__content skills__close">
+                                <div class="skills__header">
+                                    
+                                    <i class="uil uil-image-edit skills__icon"></i>
+                                    <div>
+                                        <h1 class="skills__titles">Graphic Editor</h1>
+                                        <span class="skills__subtitle">2 years</span>
+    
+                                      </div>
+    
+                                      <i class="uil uil-angle-down skills__arrow"></i>
+                                      
+                                </div>
+                                <div class="skills__list grid">
+    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Adobe Photoshop</h3>
+                                            <span class="skilss__number">Intermediate</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__photoshop"></span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Gimp</h3>
+                                            <span class="skilss__number">Advanced</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__gimp"></span>
+                                        </div>
+                                    </div>
+    
+                                    <div class="skills__data">
+                                        <div class="skills__titles">
+                                            <h3 class="skills__name">Adobe XD</h3>
+                                            <span class="skilss__number">Begginer</span>
+                                        </div>
+                                        <div class="skills__bar">
+                                            <span class="skills__percentage skills__adobexd"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal yourney</span>
+
+                <div class="qualifications__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        
+                                <div class="qualification__button button--flex">
+                                    <i class="uil uil-briefcase qualification__icon"></i>
+                                    Work
+        
+                         </div>
+                         <div class="qualification__sections">
+                            <!-- qualifications content 1 -->
+                            <div class="qualification__content">
+                                <!-- qualifications 1 -->
+                                <div class="qualification__data">
+                                    <div>
+                                    <h3 class="qualification__title">IT engineer degree</h3>
+                                    <span class="qualification__subtitle">Cracov- University of pedagogy</span>
+                                    <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2017-2021
+                                     </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                    </div>
+                                </div>
+                                <!-- qualifications 1 -->
+                                
+                            
+                        
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            
+
+
+        <!-- KAROUZEL -->
+        <div class="class menuone">
+        <div class="menu">
+            <div class="toggle"><ion-icon name="apps-outline"></ion-icon></div>
+                <li style="--i:0;">
+                    
+                <a href="Portfolio/cssgamepanel/index.html">   <ion-icon name="person-outline"></ion-icon>  
+                </a>
+                
+                </li>
+    
+                <li style="--i:1;">
+                    <a href="Portfolio/firstportfolio/index.html"> <ion-icon name="person-outline"></ion-icon>  
+                    </a>
+                    </li>
+    
+                    <li style="--i:2;">
+                        <a href="Portfolio/ninjagame/game.html"><ion-icon name="game-controller-outline"></ion-icon>   
+                        </a>
+                        </li>
+    
+                        <li style="--i:3;">
+                            <a href="Portfolio/gallowsgame/szubienica.html"> <ion-icon name="game-controller-outline"></ion-icon>  
+                            </a>
+                            </li>
+    
+                            <li style="--i:4;">
+                                <a href="Portfolio/spawebsite/index.html"><ion-icon name="folder-outline"></ion-icon>
+                                </a>
+                                </li>
+    
+                                <li style="--i:5;">
+                                    <a href="Portfolio/dobwebsite/index.html"> <ion-icon name="person-outline"></ion-icon>  
+                                    </a>
+                                    </li>
+    
+                                    <li style="--i:6;">
+                                        <a href="Portfolio/underdevelop/index.html"> <ion-icon name="home-outline"></ion-icon>  
+                                        </a>
+                                        </li>
+    
+                                    
+            
+                                        </div>
+    
+        </div>
+        
+
+        <!-- PROBNE  -->
+        <script>
+            let toggle = document.querySelector('.toggle');
+            let menu= document.querySelector('.menu');
+            
+            toggle.onclick = function(){
+            menu.classList.toggle ('active')
+            
+            }
+            </script>
+        <button><a href="Portfolio/karouselpanel/index.html"> My portfolio</a></button>
+        <script src="main.js"></script>
+    </body>
 </html>
+
